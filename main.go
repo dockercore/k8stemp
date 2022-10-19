@@ -1,6 +1,7 @@
 package main
 
 import (
+	"debug/dwarf"
 	"flag"
 	"fmt"
 	"os"
@@ -54,9 +55,4 @@ func homeDir() string {
 		return h
 	}
 	return os.Getenv("USERPROFILE") // windows
-}
-
-func main() {
-	fmt.Printf()
-
 }
